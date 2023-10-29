@@ -7,7 +7,7 @@ type State = {
 
 const initialState: State = {
   isRequestInProgress: false,
-  requestStep: 'idle',
+  requestStep: "idle" | "start" | "pending" | "finished",
 };
 
 type Action =
