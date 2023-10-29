@@ -2,12 +2,12 @@ import React, {useReducer} from "react";
 
 type State = {
   isRequestInProgress: boolean
-  requestStep: string
+  requestStep: "idle" | "start" | "pending" | "finished",
 }
 
 const initialState: State = {
   isRequestInProgress: false,
-  requestStep: "idle" | "start" | "pending" | "finished",
+  requestStep: "idle",
 };
 
 type Action =
