@@ -3,7 +3,7 @@ import noop from "lodash/noop";
 
 type MenuIds = "first" | "second" | "last";
 type Menu = { id: MenuIds; title: string };
-type SelectedMenu = Pick<Menu, 'id'>
+type SelectedMenu = {id: MenuIds}
 
 // Додати тип Menu Selected
 type MenuSelected = {
